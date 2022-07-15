@@ -16,12 +16,6 @@ const SimpleSlider = () => {
       <div>
         <SliderItem />
       </div>
-      <div>
-        <SliderItem />
-      </div>
-      <div>
-        <SliderItem />
-      </div>
     </Slider>
   );
 };
