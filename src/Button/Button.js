@@ -7,9 +7,9 @@ background: #920303;
 border-radius: 10px;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
-border: none;
+border: 0;
 :hover {
     cursor: pointer;
 }

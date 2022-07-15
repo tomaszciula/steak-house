@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../data";
 
 export const HeaderWrapper = styled.div`
 display: flex;
@@ -6,11 +7,17 @@ width: 100vw;
 height: 81px;
 align-items: center;
 justify-content: space-between;
+@media ${device.tablet} {
+    flex-direction: column;
+}
 `
 
 export const LeftSectionWrapper = styled.div`
 width: auto;
 display: flex;
+@media ${device.tablet} {
+    flex-wrap: wrap;
+  }
 `
 
 export const LeftSectionItemWrapper = styled.div`

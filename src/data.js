@@ -1,11 +1,14 @@
 export const headerText = [
-  "Steaks",
-  "Burgers",
-  "French fries",
-  "Drinks",
-  "Gdzie dowozimy?",
-  "Kontakt",
+  {"Steaks": "/steaks"},
+  {"Burgers": "/burgers"},
+  {"French fries": "/fries"},
+  {"Drinks": "/drinks"},
+  {"Gdzie dowozimy?": "/delivery"},
+  {"Kontakt": "/contact"},
 ];
+export const sliderImages = [
+    "dana-devolk-x2cNcfz_xXU-unsplash.png", "Bitmap@2x.png", "aplikacja@2x.png",
+]
 const size = {
   mobileS: "320px",
   mobileM: "375px",
@@ -16,10 +19,10 @@ const size = {
   desktop: "2560px",
 };
 export const device = {
-    mobileS: `(min-width: ${size.mobileS})`,
-    mobileM: `(min-width: ${size.mobileM})`,
-    mobileL: `(min-width: ${size.mobileL})`,
-    tablet: `(min-width: ${size.tablet})`,
+    mobileM: `(max-width: ${size.mobileM})`,
+    mobileL: `(max-width: ${size.mobileL})`,
+    mobileS: `(max-width: ${size.mobileS})`,
+    tablet: `(max-width: ${size.tablet})`,
     laptop: `(min-width: ${size.laptop})`,
     laptopL: `(min-width: ${size.laptopL})`,
     desktop: `(min-width: ${size.desktop})`,

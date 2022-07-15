@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import { sliderImages } from "../data";
+import { SliderWrapper } from "./Slider.styled";
 import SliderItem from "./SliderItem";
 
 const SimpleSlider = () => {
@@ -12,28 +14,16 @@ const SimpleSlider = () => {
     slidesToScroll: 1,
   };
   return (
-    <Slider {...settings}>
-      <div>
-        <SliderItem />
-      </div>
-    </Slider>
+    <SliderWrapper>
+      <Slider {...settings}>
+        {sliderImages.map((item) => (
+          <div>
+            <SliderItem image={item} />
+          </div>
+        ))}
+      </Slider>
+    </SliderWrapper>
   );
 };
-{
-  /*}
-const slider = (
-    <AutoplaySlider play={true} interval={2000}>
-        <div><SliderItem /></div>
-        <div><SliderItem /></div>
-        <div><SliderItem /></div>
-    </AutoplaySlider>
-  );
 
-  const Slider = () => {
-    return (
-      slider
-    )
-  }
-*/
-}
 export default SimpleSlider;

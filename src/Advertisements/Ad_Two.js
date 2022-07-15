@@ -5,12 +5,20 @@ import {
   LeftSideWrapper,
   AdContentWrapper,
   IconWrapper,
+  IconsGroupWrapper,
 } from "./Ads.styled";
 import Text from "../Text/Text";
 import Button from "../Button/Button";
 import { ReactComponent as Huawei } from "../Assets/huawei-app-badge-9757fa 2.svg";
+import BackgroundBox from "../BackgroundBox/BackgroundBox";
 
 const Ad_Two = () => {
+  const handleClick = () => {
+    alert("Zamów online");
+  };
+  const handleIconClick = () => {
+    alert("Huawei");
+  };
   return (
     <AdTwoWrapper>
       <LeftSideWrapper>
@@ -20,21 +28,27 @@ const Ad_Two = () => {
           </Text>
         </AdTitleWrapper>
         <AdContentWrapper mb="14px">
-          <Text size="20px" weight="400" lineHeight="32px" color="white">
-            Zamawiaj w aplikacji 10% taniej. Pobierz aplikację UberEats już
-            dziś.
+          <Text size="20px" weight="600" lineHeight="32px" color="white">
+            Zamawiaj w aplikacji{" "}
+            <BackgroundBox backgroundColor="#920303">
+              {" "}
+              10% taniej.
+            </BackgroundBox>{" "}
+            Pobierz aplikację UberEats już dziś.
           </Text>
         </AdContentWrapper>
-        <IconWrapper>
-          <Huawei style={{ marginBottom: "23px", marginRight: "13px" }} />
-        </IconWrapper>
-        <IconWrapper>
-          <Huawei style={{ marginBottom: "23px", marginRight: "14px" }} />
-        </IconWrapper>
-        <IconWrapper>
-          <Huawei style={{ marginBottom: "23px" }} />
-        </IconWrapper>
-        <Button>
+        <IconsGroupWrapper>
+          <IconWrapper onClick={handleIconClick}>
+            <Huawei style={{ marginBottom: "23px", marginRight: "13px" }} />
+          </IconWrapper>
+          <IconWrapper onClick={handleIconClick}>
+            <Huawei style={{ marginBottom: "23px", marginRight: "14px" }} />
+          </IconWrapper>
+          <IconWrapper onClick={handleIconClick}>
+            <Huawei style={{ marginBottom: "23px" }} />
+          </IconWrapper>
+        </IconsGroupWrapper>
+        <Button onClick={handleClick}>
           <Text color="white">Zamów online</Text>
         </Button>
       </LeftSideWrapper>

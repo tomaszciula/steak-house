@@ -1,36 +1,39 @@
 import styled from "styled-components";
-import AwesomeSlider from "react-awesome-slider";
+import { device } from "../data";
 
+export const SliderWrapper = styled.div`
 
-export const StyledSlider = styled(AwesomeSlider)`
-background: #fff !important;
-color: white;
 `
 
 export const SliderItemWrapper = styled.div`
-width: 100%;
+width: 100vw;
 height: auto;
 display: flex;
-justify: center;
-align: center;
+justify-content: space-between;
 color: white;
-padding: 50px;
+@media ${device.tablet} {
+    flex-direction: column;
+  }
 `
 export const SliderItemContent = styled.div`
 display: flex;
-max-width: 568px;
+max-width: 935px;
 flex-direction: column;
-margin-top: 104px;
+margin-top: 44px;
 margin-left: 149px;
+margin-right: 120px;
+
 `
 export const SliderItemPhoto = styled.div`
 display: flex;
-height: auto;
+width: 924px;
 `
 export const SliderItemTitle = styled.div`
 
 `
 export const TextWrapper = styled.div`
-max-width: 406px;
+max-width: 506px;
 margin-bottom: 36px;
+text-align: justify;
+margin-top: 0;
 `

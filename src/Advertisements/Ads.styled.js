@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import AdOneImg from "../Assets/Ad-1.png";
 import Aplikacja from "../Assets/aplikacja@2x.png";
+import { device } from "../data";
 
 export const AdsWrapper = styled.div`
   display: flex;
-  width: 100vw;
+  max-width: 100vw;
   height: auto;
+  @media ${device.tablet} {
+    flex-direction: column;
+  }
 `;
 
 export const AdOneWrapper = styled.div`
@@ -13,8 +17,12 @@ export const AdOneWrapper = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 50%;
+  width: 50vw;
   height: 443px;
+  margin: 8px;
+  @media ${device.tablet} {
+    width: 100vw;
+  }
 `;
 
 export const AdTwoWrapper = styled.div`
@@ -22,8 +30,12 @@ export const AdTwoWrapper = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 50%;
+  width: 50vw;
   height: 443px;
+  margin: 8px;
+  @media ${device.tablet} {
+    width: 100vw;
+  }
 `;
 export const LeftSideWrapper = styled.div`
   flex-direction: column;
@@ -33,16 +45,19 @@ export const LeftSideWrapper = styled.div`
 
 export const AdTitleWrapper = styled.div`
   color: white;
-  margin-bottom: 29px;
 `;
 
 export const AdContentWrapper = styled.div`
-  width: 324px;
+  width: 380px;
   margin-bottom: ${(props) => props.mb || "32px"};
 `;
 
-export const IconWrapper = styled.div`
-&:hover {
-  cursor: pointer;
-}
+export const IconsGroupWrapper = styled.div`
+display: flex;
 `
+
+export const IconWrapper = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
+`;

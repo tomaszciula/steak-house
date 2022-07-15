@@ -1,5 +1,4 @@
 import React from "react";
-import { headerText } from "../data";
 import {
   HeaderWrapper,
   LeftSectionItemWrapper,
@@ -23,6 +22,24 @@ const Header = () => {
   const onOrderButtonClick = () => {
     alert("Zamów");
   };
+  const handleSteaks = () => {
+    alert("Steaks")
+  }
+  const handleBurgers = () => {
+    alert("Burgers")
+  }
+  const HandleFries = () => {
+    alert("French fries")
+  }
+  const handleDrinks = () => {
+    alert("Drinks")
+  }
+  const handleDelivery = () => {
+    alert("Gdzie dowozimy?")
+  }
+  const handleContact = () => {
+    alert("Kontakt")
+  }
   return (
     <HeaderWrapper>
       <LeftSectionWrapper>
@@ -37,11 +54,24 @@ const Header = () => {
             marginRight: "68.5px",
           }}
         />
-        {headerText.map((el) => (
-          <LeftSectionItemWrapper>
-            <Text lineHeight="32px">{el}</Text>
-          </LeftSectionItemWrapper>
-        ))}
+        <LeftSectionItemWrapper onClick={handleSteaks}>
+          <Text lineHeight="32px">Steaks</Text>
+        </LeftSectionItemWrapper>
+        <LeftSectionItemWrapper onClick={handleBurgers}>
+          <Text lineHeight="32px">Burgers</Text>
+        </LeftSectionItemWrapper>
+        <LeftSectionItemWrapper onClick={HandleFries}>
+          <Text lineHeight="32px">French fries</Text>
+        </LeftSectionItemWrapper>
+        <LeftSectionItemWrapper onClick={handleDrinks}>
+          <Text lineHeight="32px">Drinks</Text>
+        </LeftSectionItemWrapper>
+        <LeftSectionItemWrapper onClick={handleDelivery}>
+          <Text lineHeight="32px">Gdzie dowozimy?</Text>
+        </LeftSectionItemWrapper>
+        <LeftSectionItemWrapper onClick={handleContact}>
+          <Text lineHeight="32px">Kontakt</Text>
+        </LeftSectionItemWrapper>
       </LeftSectionWrapper>
       <RightSectionWrapper>
         <RightSectionItemWrapper onClick={onMyAccountClick}>
@@ -53,8 +83,8 @@ const Header = () => {
           <Text>Koszyk</Text>
         </RightSectionItemWrapper>
         <Button width="97px" height="57px" onClick={onOrderButtonClick}>
-          <Order />
-          <Text>Zamów</Text>
+          <Order style={{ marginTop: "12px" }} />
+          <Text color="white">Zamów</Text>
         </Button>
       </RightSectionWrapper>
     </HeaderWrapper>
