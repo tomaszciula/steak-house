@@ -23,23 +23,23 @@ const Header = () => {
     alert("Zamów");
   };
   const handleSteaks = () => {
-    alert("Steaks")
-  }
+    alert("Steaks");
+  };
   const handleBurgers = () => {
-    alert("Burgers")
-  }
+    alert("Burgers");
+  };
   const HandleFries = () => {
-    alert("French fries")
-  }
+    alert("French fries");
+  };
   const handleDrinks = () => {
-    alert("Drinks")
-  }
+    alert("Drinks");
+  };
   const handleDelivery = () => {
-    alert("Gdzie dowozimy?")
-  }
+    alert("Gdzie dowozimy?");
+  };
   const handleContact = () => {
-    alert("Kontakt")
-  }
+    alert("Kontakt");
+  };
   return (
     <HeaderWrapper>
       <LeftSectionWrapper>
@@ -48,7 +48,7 @@ const Header = () => {
           alt="logo header left"
           style={{
             height: "47px",
-            width: "48px%",
+            width: "48px",
             objectFit: "contain",
             marginLeft: "148.5px",
             marginRight: "68.5px",
@@ -82,9 +82,14 @@ const Header = () => {
           <Basket />
           <Text>Koszyk</Text>
         </RightSectionItemWrapper>
-        <Button width="97px" height="57px" onClick={onOrderButtonClick}>
-          <Order style={{ marginTop: "12px" }} />
-          <Text color="white">Zamów</Text>
+        <Button
+          width="97px"
+          height="57px"
+          onClick={onOrderButtonClick}
+          style={{ color: "white" }}
+        >
+          <Order style={{ width: "20px", marginBottom: "8px" }} />
+          Zamów
         </Button>
       </RightSectionWrapper>
     </HeaderWrapper>

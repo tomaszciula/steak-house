@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import { sliderImages } from "../data";
-import { SliderWrapper } from "./Slider.styled";
 import SliderItem from "./SliderItem";
 
 const SimpleSlider = () => {
@@ -14,7 +13,6 @@ const SimpleSlider = () => {
     slidesToScroll: 1,
   };
   return (
-    <SliderWrapper>
       <Slider {...settings}>
         {sliderImages.map((item) => (
           <div>
@@ -22,7 +20,6 @@ const SimpleSlider = () => {
           </div>
         ))}
       </Slider>
-    </SliderWrapper>
   );
 };
 

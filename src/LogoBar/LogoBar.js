@@ -1,35 +1,91 @@
 import React from "react";
-
-import { LogoBarWrapper } from "./LogoBar.styled";
+import { BarItemWrapper, LogoBarWrapper, StyledSlider } from "./LogoBar.styled";
 
 const LogoBar = () => {
+  var settings = {
+    autoplay: true,
+    centerMode: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 0,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          autoplay: true,
+          centerMode: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          autoplay: true,
+          centerMode: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          autoplay: true,
+          centerMode: true,
+          slidesToShow: 1,
+          infinite: true,
+
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <LogoBarWrapper>
-      <img
-        src={require("../Assets/PysznePL.png")}
-        alt="pyszne pl logo"
-        style={{ height: "100%", width: "70px", objectFit: "contain" }}
-      />
-      <img
-        src={require("../Assets/DeliGoo.png")}
-        alt="pyszne pl logo"
-        style={{ height: "100%", width: "87px", objectFit: "contain" }}
-      />
-      <img
-        src={require("../Assets/Glovo.png")}
-        alt="pyszne pl logo"
-        style={{ height: "100%", width: "79px", objectFit: "contain" }}
-      />
-      <img
-        src={require("../Assets/UberEats.png")}
-        alt="pyszne pl logo"
-        style={{ height: "100%", width: "107px", objectFit: "contain" }}
-      />
-      <img
-        src={require("../Assets/BoltFood.png")}
-        alt="pyszne pl logo"
-        style={{ height: "100%", width: "86px", objectFit: "contain" }}
-      />
+      <StyledSlider {...settings}>
+        <BarItemWrapper>
+          <img
+            src={require("../Assets/PysznePL.png")}
+            alt="pyszne pl logo"
+            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+          />
+        </BarItemWrapper>
+        <BarItemWrapper>
+          <img
+            src={require("../Assets/DeliGoo.png")}
+            alt="pyszne pl logo"
+            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+          />
+        </BarItemWrapper>
+        <BarItemWrapper>
+          <img
+            src={require("../Assets/Glovo.png")}
+            alt="pyszne pl logo"
+            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+          />
+        </BarItemWrapper>
+        <BarItemWrapper>
+          <img
+            src={require("../Assets/UberEats.png")}
+            alt="pyszne pl logo"
+            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+          />
+        </BarItemWrapper>
+        <BarItemWrapper>
+          <img
+            src={require("../Assets/BoltFood.png")}
+            alt="pyszne pl logo"
+            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+          />
+        </BarItemWrapper>
+      </StyledSlider>
     </LogoBarWrapper>
   );
 };
