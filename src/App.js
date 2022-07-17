@@ -1,9 +1,9 @@
 import React from 'react';
-import MainView from './MainView/MainView';
+import MainView from './components/organisms/MainView/MainView'
 
 function App() {
   return (
-    <MainView/>
+    <MainView />
   );
 }
 

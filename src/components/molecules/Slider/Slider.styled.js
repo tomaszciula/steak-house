@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import { device } from "../data";
+import { device } from "../../../data";
 
 export const SliderItemWrapper = styled.div`
   width: 100vw;
-  height: auto;
+  max-height: auto;
   display: flex;
   @media ${device.laptop} {
     display: flex;
     width: 100vw;
-    align-items: center;
+    align-content: center;
   }
   @media ${device.mobileL} {
     display: flex;
@@ -17,6 +17,7 @@ export const SliderItemWrapper = styled.div`
     margin: 50px 10px;
   }
 `;
+
 export const SliderItemContent = styled.div`
   display: flex;
   width: 50vw;
@@ -37,6 +38,7 @@ export const SliderItemContent = styled.div`
     margin: 10px 10px;
   }
 `;
+
 export const SliderItemPhoto = styled.div`
   display: flex;
   width: 50vw;

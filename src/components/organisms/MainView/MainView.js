@@ -1,8 +1,8 @@
 import React from "react";
-import Ads from "../Advertisements/Ads";
-import Header from "../Header/Header";
-import LogoBar from "../LogoBar/LogoBar";
-import Slider from "../Slider/Slider";
+import Ads from "../../molecules/Advertisements/Ads";
+import Header from "../../molecules/Header/Header";
+import LogoBar from "../../molecules/LogoBar/LogoBar";
+import Slider from "../../molecules/Slider/Slider";
 import { MainViewWrapper } from "./MainView.styled";
 
 const MainView = () => {

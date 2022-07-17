@@ -5,9 +5,9 @@ import {
   SliderItemWrapper,
   TextWrapper,
 } from "./Slider.styled";
-import Text from "../Text/Text";
-import Button from "../Button/Button";
-import BackgroundBox from "../BackgroundBox/BackgroundBox";
+import Text from "../../atoms/Text/Text";
+import Button from "../../atoms/Button/Button";
+import BackgroundBox from "../../atoms/BackgroundBox/BackgroundBox";
 
 const SliderItem = (props) => {
   const handleClick = () => {
@@ -16,7 +16,7 @@ const SliderItem = (props) => {
   return (
     <SliderItemWrapper>
       <SliderItemContent>
-        <Text size="48px" weight="700" lineHeight="65px">
+        <Text size="40px" weight="700" lineHeight="65px">
           <BackgroundBox>Rabat 10%</BackgroundBox> na pierwsze zamówienie!
         </Text>
         <TextWrapper>
@@ -32,7 +32,7 @@ const SliderItem = (props) => {
       </SliderItemContent>
       <SliderItemPhoto>
         <img
-          src={require(`../Assets/${props.image}`)}
+          src={require(`../../../Assets/${props.image}`)}
           alt="slider"
           style={{ height: "100%", width: "100%", objectFit: "contain" }}
         />

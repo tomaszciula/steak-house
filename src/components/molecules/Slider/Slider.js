@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { sliderImages } from "../data";
+import { sliderImages } from "../../../data";
 import SliderItem from "./SliderItem";
 
 const SimpleSlider = () => {
@@ -13,13 +13,13 @@ const SimpleSlider = () => {
     slidesToScroll: 1,
   };
   return (
-      <Slider {...settings}>
-        {sliderImages.map((item) => (
-          <div>
-            <SliderItem image={item} />
-          </div>
-        ))}
-      </Slider>
+    <Slider {...settings}>
+      {sliderImages.map((item) => (
+        <div>
+          <SliderItem image={item} />
+        </div>
+      ))}
+    </Slider>
   );
 };
 

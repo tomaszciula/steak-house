@@ -6,11 +6,11 @@ import {
   RightSectionItemWrapper,
   RightSectionWrapper,
 } from "./Header.styled";
-import Text from "../Text/Text";
-import { ReactComponent as Account } from "../Assets/mojekonto.svg";
-import { ReactComponent as Basket } from "../Assets/koszyk.svg";
-import { ReactComponent as Order } from "../Assets/zamow_ikona.svg";
-import Button from "../Button/Button";
+import Text from "../../atoms/Text/Text";
+import { ReactComponent as Account } from "../../../Assets/mojekonto.svg";
+import { ReactComponent as Basket } from "../../../Assets/koszyk.svg";
+import { ReactComponent as Order } from "../../../Assets/zamow_ikona.svg";
+import Button from "../../atoms/Button/Button";
 
 const Header = () => {
   const onMyAccountClick = () => {
@@ -44,7 +44,7 @@ const Header = () => {
     <HeaderWrapper>
       <LeftSectionWrapper>
         <img
-          src={require("../Assets/LogoHeaderLeft.png")}
+          src={require("../../../Assets/LogoHeaderLeft.png")}
           alt="logo header left"
           style={{
             height: "47px",

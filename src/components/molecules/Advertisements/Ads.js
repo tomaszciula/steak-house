@@ -4,12 +4,12 @@ import AdOne from "./Ad_One";
 import AdTwo from "./Ad_Two";
 
 const Ads = () => {
-    return (
-        <AdsWrapper>
-            <AdOne />
-            <AdTwo />
-        </AdsWrapper>
-    )
-}
+  return (
+    <AdsWrapper>
+      <AdOne />
+      <AdTwo />
+    </AdsWrapper>
+  );
+};
 
 export default Ads;

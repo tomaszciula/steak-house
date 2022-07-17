@@ -10,7 +10,6 @@ export const StyledSlider = styled(Slider)`
     align-items: center !important;
   }
   .slick-slider {
-    
   }
 `;
 

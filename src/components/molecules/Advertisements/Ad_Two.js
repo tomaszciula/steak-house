@@ -7,10 +7,10 @@ import {
   IconWrapper,
   IconsGroupWrapper,
 } from "./Ads.styled";
-import Text from "../Text/Text";
-import Button from "../Button/Button";
-import { ReactComponent as Huawei } from "../Assets/huawei-app-badge-9757fa 2.svg";
-import BackgroundBox from "../BackgroundBox/BackgroundBox";
+import Text from "../../atoms/Text/Text";
+import Button from "../../atoms/Button/Button";
+import { ReactComponent as Huawei } from "../../../Assets/huawei-app-badge-9757fa 2.svg";
+import BackgroundBox from "../../atoms/BackgroundBox/BackgroundBox";
 
 const Ad_Two = () => {
   const handleClick = () => {

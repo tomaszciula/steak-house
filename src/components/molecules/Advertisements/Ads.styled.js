@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import AdOneImg from "../Assets/Ad-1.png";
-import Aplikacja from "../Assets/aplikacja@2x.png";
-import { device } from "../data";
+import AdOneImg from "../../../Assets/Ad-1.png";
+import Aplikacja from "../../../Assets/aplikacja@2x.png";
+import { device } from "../../../data";
 
 export const AdsWrapper = styled.div`
   display: flex;
@@ -39,6 +39,7 @@ export const AdTwoWrapper = styled.div`
     width: 100vw;
   }
 `;
+
 export const LeftSideWrapper = styled.div`
   width: 289px;
   height: 63px;

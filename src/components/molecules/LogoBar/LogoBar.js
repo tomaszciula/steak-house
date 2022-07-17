@@ -2,6 +2,7 @@ import React from "react";
 import { BarItemWrapper, LogoBarWrapper, StyledSlider } from "./LogoBar.styled";
 
 const LogoBar = () => {
+  const imageStyle = { height: "100%", width: "100%", objectFit: "contain" };
   var settings = {
     autoplay: true,
     centerMode: true,
@@ -52,37 +53,37 @@ const LogoBar = () => {
       <StyledSlider {...settings}>
         <BarItemWrapper>
           <img
-            src={require("../Assets/PysznePL.png")}
+            src={require("../../../Assets/PysznePL.png")}
             alt="pyszne pl logo"
-            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+            style={imageStyle}
           />
         </BarItemWrapper>
         <BarItemWrapper>
           <img
-            src={require("../Assets/DeliGoo.png")}
+            src={require("../../../Assets/DeliGoo.png")}
             alt="pyszne pl logo"
-            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+            style={imageStyle}
           />
         </BarItemWrapper>
         <BarItemWrapper>
           <img
-            src={require("../Assets/Glovo.png")}
+            src={require("../../../Assets/Glovo.png")}
             alt="pyszne pl logo"
-            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+            style={imageStyle}
           />
         </BarItemWrapper>
         <BarItemWrapper>
           <img
-            src={require("../Assets/UberEats.png")}
+            src={require("../../../Assets/UberEats.png")}
             alt="pyszne pl logo"
-            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+            style={imageStyle}
           />
         </BarItemWrapper>
         <BarItemWrapper>
           <img
-            src={require("../Assets/BoltFood.png")}
+            src={require("../../../Assets/BoltFood.png")}
             alt="pyszne pl logo"
-            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+            style={imageStyle}
           />
         </BarItemWrapper>
       </StyledSlider>

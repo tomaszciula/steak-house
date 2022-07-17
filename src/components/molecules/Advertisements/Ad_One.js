@@ -1,7 +1,7 @@
 import React from "react";
-import BackgroundBox from "../BackgroundBox/BackgroundBox";
-import Button from "../Button/Button";
-import Text from "../Text/Text";
+import BackgroundBox from "../../atoms/BackgroundBox/BackgroundBox";
+import Button from "../../atoms/Button/Button";
+import Text from "../../atoms/Text/Text";
 import {
   AdContentWrapper,
   AdOneWrapper,
@@ -11,8 +11,8 @@ import {
 
 const Ad_One = () => {
   const handleClick = () => {
-    alert("Zamów online")
-  }
+    alert("Zamów online");
+  };
   return (
     <AdOneWrapper>
       <LeftSideWrapper>
@@ -23,7 +23,8 @@ const Ad_One = () => {
         </AdTitleWrapper>
         <AdContentWrapper>
           <Text size="20px" weight="600" lineHeight="32px" color="white">
-            Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od <BackgroundBox>39 zł</BackgroundBox>
+            Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od{" "}
+            <BackgroundBox>39 zł</BackgroundBox>
           </Text>
         </AdContentWrapper>
         <Button onClick={handleClick}>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../data";
+import { device } from "../../../data";
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -73,5 +73,5 @@ export const RightSectionItemWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 39px;
-  line-hight: 
+  line-hight: ;
 `;
